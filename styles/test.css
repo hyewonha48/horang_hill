@@ -166,25 +166,35 @@ font-size:3.13rem; font-weight:700;
     margin:30px 0}
 #wrap main #horang_hill_info #horang_hill img {width:100%; display:block; text-align:center; margin: 0 auto;}
 /* ======================================================== 주변관광지 */
-#wrap #main_place {}
-#wrap #main_place h1 {}
-#wrap #main_place p {margin-top:10px;}
-#wrap #main_place .place {
-    display:flex; flex-flow:row nowrap; gap:20px;
+#wrap main #main_place {
+    width:1220px; margin:0 auto;
+    padding: 70px 0;
 }
-#wrap #main_place .place > ul {width:calc((100% - 60px) / 4);}
-#wrap #main_place .place li {}
-#wrap #main_place .place li a {
-    display:block; overflow:hidden;
-    height: 250px;
+#wrap main #main_place h1 {font-size:1.50rem; font-weight:400;}
+#wrap main #main_place h1+p {margin:30px 0;}
+#wrap main #main_place p {}
+#wrap main #main_place .place {
+    display:flex; flex-flow:row nowrap;
+    width:calc((100% - 60px) / 4); gap:20px;
+    /* width:calc((100% - (20px * 3)) / 4);  */
+    justify-content:space-between;
+    margin:0 0 10px;
 }
-#wrap #main_place .place li a img {width:100%;}
-/* transition:transform 0.3s ease; | 마우스 위치시 자연스러운 동작으로 */
-#wrap #main_place .place li a:hover img {width:120%}
-/* transform:scale(120%) | 중앙에서 커지게 */
-#wrap #main_place .place li a p {}
-#wrap #main_place .more {
-    display:block; margin:50px auto 0; width:fit-content;
+#wrap main #main_place .place li {}
+#wrap main #main_place .place li a {
+    margin:0 0 10px; display:block;
+    overflow:hidden; height:250px;
 }
+#wrap main #main_place .place li a img {}
+#wrap main #main_place .place li a:hover img {width:120%;}
 
-/* ===============================================================================객실 및 예약안내 */
+#wrap main #main_place .place .place1>li a {}
+#wrap main #main_place .place .place2>li a {}
+#wrap main #main_place .place .place1>li a {}
+#wrap main #main_place .place .place1>li a img {}
+#wrap main #main_place .place .place1>li a p {margin-top:10px;}
+#wrap main #main_place .more {
+    padding-top:50px; font-size: 0.94rem;
+    width:149px; border-bottom:0.5px #000 solid; /* text-decoration:underline; 밑줄과 글자사이 */
+    display:block; margin:0 auto; /* width:max-content; */
+}/* ===============================================================================객실 및 예약안내 */

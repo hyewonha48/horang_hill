@@ -53,3 +53,9 @@ body {}
 /* ===================================footer */
 #wrap footer {}
 #wrap footer p {} 
+/* ======================================= main w1220+p70 */
+#wrap main .container_layout,
+#wrap footer .container_layout {width:1220px; margin:0 auto; padding:70px;}
+#wrap main .container_layout h1 {font-size:1.5rem; font-weight:600; margin:0 0 30px; } 
+#wrap main .container_layout h1+p {font-weight:0.94rem; margin:0 0 30px;}
+/* 선생님 값 / 내값으로 변경해야됨 / line-height:; 추가 */
