@@ -184,7 +184,9 @@ font-size:3.13rem; font-weight:700;
 /* transform:scale(120%) | 중앙에서 커지게 */
 #wrap #main_place .place li a p {}
 #wrap #main_place .more {
-    display:block; margin:50px auto 0; width:fit-content;
+    padding-top:50px; font-size: 0.94rem;
+    width:149px; border-bottom:0.5px #000 solid;
+    display:block; margin:0 auto;
 }
 
 /* ===============================================================================객실 및 예약안내 */
