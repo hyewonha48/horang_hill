@@ -91,7 +91,7 @@ font-size:3.13rem; font-weight:700;
 #wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in a .date {}
 #wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in a img {padding-bottom:10px;}
 #wrap main #hero_bnr #reservation_form .check_in_out .day {
-    margin:10px;
+    margin:0 5px;
     display:flex;
     flex-flow:column nowrap;
     justify-content:center;
@@ -178,7 +178,8 @@ font-size:3.13rem; font-weight:700;
     display:block; overflow:hidden;
     height: 250px;
 }
-#wrap #main_place .place li a img {width:100%;}
+#wrap #main_place .place li a span {}
+#wrap #main_place .place li a span img {width:100%;}
 /* transition:transform 0.3s ease; | 마우스 위치시 자연스러운 동작으로 */
 #wrap #main_place .place li a:hover img {width:120%}
 /* transform:scale(120%) | 중앙에서 커지게 */
