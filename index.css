@@ -1,0 +1,193 @@
+/* index.css */
+#wrap main {}
+#wrap main #hero_bnr {
+    height:830px; min-width:1220px;
+    background-image:url(../images/hero_bnr_img.jpg);
+    background-size:cover;
+    background-position:center;
+}
+#wrap main #hero_bnr .ad_txt {
+    padding-top:440px; text-align:center;
+}
+#wrap main #hero_bnr .ad_txt p {
+font-size:1.88rem; color:#fff; font-weight:600; margin-bottom:20px;
+}
+#wrap main #hero_bnr .ad_txt h1 {
+font-size:3.13rem; font-weight:700;
+}
+#wrap main #hero_bnr .ad_txt p,
+#wrap main #hero_bnr .ad_txt h1 {
+    /* text-shadow:xy 흐림색상; */
+    color:#fff; line-height:1.5;
+    text-shadow:0 4px 4px #444; margin-bottom:40px;
+}
+#wrap main #hero_bnr #reservation_form {
+    width:1000px;
+    margin:0 auto; padding:30px 31.5px 30px 31.5px;
+    background-color:rgba(255, 255, 255, 0.7);
+    display:flex; /* 객실, 체크인/아웃, 인원, 검색 (자식들)정렬 flex */
+    flex-flow:row nowrap; /* 수평양쪽 */
+    justify-content:space-between; /* 수평양쪽 끝 배치 */
+    align-items:center; /* 교차축 */
+}
+/* --------------------------------------------------------------- 객실~인원 공통디자인 */
+#wrap main #hero_bnr #reservation_form .room h2 {margin-bottom:10px;}
+#wrap main #hero_bnr #reservation_form .check_in_out .in h2 {}
+#wrap main #hero_bnr #reservation_form .check_in_out .out h2 {}
+#wrap main #hero_bnr #reservation_form .person h2 {}
+
+#wrap main #hero_bnr #reservation_form h2+div,
+#wrap main #hero_bnr #reservation_form ul li {}
+/* --------------------------------------------------------------- 객실선택 */
+#wrap main #hero_bnr #reservation_form .room {}
+#wrap main #hero_bnr #reservation_form .room h2 {}
+#wrap main #hero_bnr #reservation_form .room .room_type {
+    position:relative; /* room_open 기준 */
+}
+#wrap main #hero_bnr #reservation_form .room .room_type>a,
+    #wrap main #hero_bnr #reservation_form .room .room_type> .room_open a {
+    background-color:#fff;
+    display:flex; /*  flex 설정시 형제끼리 크기맞추는 자동설정때문에 이미지 비율이 망가져보일 수 있음 (메인,교차축 설정적용하면 해결됨)p */
+    width:180px; height:34px;
+    padding:10px;
+    align-items:center; justify-content:space-between;
+    padding:0 10px; border:0.75px solid #000;
+}
+#wrap main #hero_bnr #reservation_form .room .room_type>a .name,
+#wrap main #hero_bnr #reservation_form .room .room_type>.room_open .name {
+    font-size:0.88rem;
+}
+#wrap main #hero_bnr #reservation_form .room .room_type>a .name span,
+#wrap main #hero_bnr #reservation_form .room .room_type>.room_open a .name span {
+    font-size:0.63rem;
+}
+#wrap main #hero_bnr #reservation_form .room .room_type:hover .room_open {display:block;}
+#wrap main #hero_bnr #reservation_form .room .room_type>a img {}
+#wrap main #hero_bnr #reservation_form .room .room_type .room_open {
+    position:absolute; left:0; top:0;
+    display:none;
+    /* absolute 설정시 기존태그 크기가 inline-block처럼 바뀜 */
+}
+#wrap main #hero_bnr #reservation_form .room .room_type .room_open a {}
+#wrap main #hero_bnr #reservation_form .room .room_type .room_open a.name {}
+#wrap main #hero_bnr #reservation_form .room .room_type .room_open a.name span {}
+/* --------------------------------------------------------------- 체크인/아웃 */
+#wrap main #hero_bnr #reservation_form .check_in_out {
+    display:flex;
+    flex-flow:row nowrap;
+}
+#wrap main #hero_bnr #reservation_form .check_in_out .in {}
+#wrap main #hero_bnr #reservation_form .check_in_out .in h2 {margin-bottom:10px;}
+#wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in {}
+#wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in a {
+    width:180px; height: 34px;
+    display: flex;
+    background-color: #fff;
+    border:0.75px solid #000;
+    align-items:center; justify-content:space-between;
+    padding:10px;
+    font-size: 0.88rem;
+}
+#wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in a .date {}
+#wrap main #hero_bnr #reservation_form .check_in_out .in .chk_in a img {padding-bottom:10px;}
+#wrap main #hero_bnr #reservation_form .check_in_out .day {
+    margin:0 5px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+#wrap main #hero_bnr #reservation_form .check_in_out .day img {}
+#wrap main #hero_bnr #reservation_form .check_in_out .day em {margin:10px;}
+#wrap main #hero_bnr #reservation_form .check_in_out .out {}
+#wrap main #hero_bnr #reservation_form .check_in_out .out h2 {padding-bottom:10px;}
+#wrap main #hero_bnr #reservation_form .check_in_out .chk_out {
+    display: block;
+}
+#wrap main #hero_bnr #reservation_form .check_in_out .chk_out a {
+    width:180px; height: 34px;
+    display: flex;
+    background-color: #fff;
+    border:0.75px solid #000;
+    align-items:center; justify-content:space-between;
+    padding:10px;
+    font-size: 0.88rem;
+}
+#wrap main #hero_bnr #reservation_form .check_in_out .chk_out a .date {}
+#wrap main #hero_bnr #reservation_form .check_in_out .chk_out a img {}
+/* --------------------------------------------------------------- 인원 */
+#wrap main #hero_bnr #reservation_form .person {}
+#wrap main #hero_bnr #reservation_form .person h2 {padding-bottom:10px;}
+#wrap main #hero_bnr #reservation_form .person .number {
+    display:flex;
+}
+#wrap main #hero_bnr #reservation_form .person .number li {
+    display:flex;
+    width:121px; height:34px;
+    flex-flow:row nowrap;
+    align-items:center; justify-content:center;
+    background-color: #fff;
+    border:0.75px solid #000;
+    font-size: 0.88rem;
+    margin-right:8px;
+}
+#wrap main #hero_bnr #reservation_form .person .number li .number_btn {
+    width:24px; height:24px;
+    background-color: orange;
+} /* 공통버튼 */
+#wrap main #hero_bnr #reservation_form .person .number li .number_btn img {}
+#wrap main #hero_bnr #reservation_form .person .number li #adult_add {}
+#wrap main #hero_bnr #reservation_form .person .number li #adult_remove {}
+#wrap main #hero_bnr #reservation_form .person .number li span {}
+#wrap main #hero_bnr #reservation_form .person .number li span label {}
+#wrap main #hero_bnr #reservation_form .person .number li span input {
+    width:24px;
+}
+#wrap main #hero_bnr #reservation_form .person .number li span #adult {}
+#wrap main #hero_bnr #reservation_form .person .number li span #kid {}
+#wrap main #hero_bnr #reservation_form .person .number li #kid_add {}
+#wrap main #hero_bnr #reservation_form .person .number li #kid_remove {}
+
+#wrap main #hero_bnr #reservation_form > P {
+    position:relative;
+    top:12px;
+}
+#wrap main #hero_bnr #reservation_form > P #search_btn {
+    background-color:#000; color:#fff; width:60px; height:34px;
+    font-size: 0.88rem;
+}
+#wrap main #horang_hill_info {background-color:#F5F5F5;}
+#wrap main #horang_hill_info #horang_hill {
+    width:1220px; margin:0 auto;
+    padding:70px 0;}
+#wrap main #horang_hill_info #horang_hill h1 {font-size:1.50rem;}
+#wrap main #horang_hill_info #horang_hill p {
+    font-size:0.94rem; line-height:1.7rem; font-weight:400;
+    margin:30px 0}
+#wrap main #horang_hill_info #horang_hill img {width:100%; display:block; text-align:center; margin: 0 auto;}
+/* ======================================================== 주변관광지 */
+#wrap #main_place {}
+#wrap #main_place h1 {}
+#wrap #main_place p {margin-top:10px;}
+#wrap #main_place .place {
+    display:flex; flex-flow:row nowrap; gap:20px;
+}
+#wrap #main_place .place > ul {width:calc((100% - 60px) / 4);}
+#wrap #main_place .place li {}
+#wrap #main_place .place li a {
+    display:block; overflow:hidden;
+    height: 250px;
+}
+#wrap #main_place .place li a span {}
+#wrap #main_place .place li a span img {width:100%;}
+/* transition:transform 0.3s ease; | 마우스 위치시 자연스러운 동작으로 */
+#wrap #main_place .place li a:hover img {width:120%}
+/* transform:scale(120%) | 중앙에서 커지게 */
+#wrap #main_place .place li a p {}
+#wrap #main_place .more {
+    padding-top:50px; font-size: 0.94rem;
+    width:149px; border-bottom:0.5px #000 solid;
+    display:block; margin:0 auto;
+}
+
+/* ===============================================================================객실 및 예약안내 */
